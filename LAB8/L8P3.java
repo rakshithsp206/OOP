@@ -7,7 +7,12 @@ public class L8P3 {
         String[] names=new String[10];
         for (int i = 0; i < 10; i++) {
             String name=sc.nextLine();
-            names[i]=name.substring(3);
+            if(name.length()>3)
+                names[i]=name.substring(3);
+            else{
+                names[i]="";
+            }
+
         }
         Arrays.sort(names);
 
